@@ -107,24 +107,6 @@ source $ZSH/oh-my-zsh.sh
 # Rbenv
 eval "$(rbenv init -)"
 
-# Sfleet
-export SFLEET_USERNAME_DB=vega
-export SFLEET_DB_NAME=assister
-export SFLEET_PASSWORD_DB=''
-export SMTP_SES_USER=apikey
-export SMTP_SES_PWD=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
-export JWT_KEY_BASE=2cde884f97c7b6878a2ef90dd7add74de7f43c4701c4799e35f2cf1d4de69025823eb8c896bb5e34dff12c27e2591b01e687bb2d50686fd56d7b004baf4f0e4e
-export APIKEYTOMTOM=b37fba47-9072-4c97-8e5a-2f1998c1cd9c
-
-# Amazon
-export AWS_ACCESS_KEY_ID=AKIAI2GOA3UDW7LA73IQ
-export AWS_SECRET_ACCESS_KEY=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
-export AWS_REGION=us-east-1
-# export AWS_S3_REGION=us-west-2
-export AWS_S3_DIRECTORY=asisster-fleet-management
-
-export SECRET_KEY_BASE=59959bd080da61de858fabbef9850ed84b238abe60294a66f8f16baf3663df621f14c5c3ac9d5d2384860e1ca3ae7d245dfce0f60c08ec49b4f9829567110726
-
 # Flutter
 export PATH="$PATH:/Users/vega/flutter/bin"
 
@@ -212,4 +194,3 @@ export PYTHONPATH=$PYTHONPATH:$HOME/Desktop/benandfrank/odoo
 
 export SPICETIFY_INSTALL="/Users/vega/spicetify-cli"
 export PATH="$SPICETIFY_INSTALL:$PATH"
-export THEOS=~/theos
