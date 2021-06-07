@@ -39,6 +39,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'stsewd/fzf-checkout.vim'
 call plug#end()
 
 " Vim theme
@@ -57,7 +58,7 @@ nnoremap <silent><C-p> :FZF<CR>
 nnoremap <C-f> :Rg<space>
 
 " Delete line shortcut
-nnoremap <BS> dd
+nnoremap <silent><BS> dd
 
 " Trim white spaces
 function! TrimWhitespace()
@@ -80,6 +81,17 @@ let g:VM_maps["Add Cursor Up"] = '<S-C-Up>' " New cursor up
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" Fugitive shortcuts
+nnoremap <silent><leader>gj :diffget //3<CR>
+nnoremap <silent><leader>gf :diffget //2<CR>
+nnoremap <silent><leader>gs :G<CR>
+nnoremap <silent><leader>gc :GBranches<CR>
+
+" FZF checkout settings
+let g:fzf_branch_actions = {
+  \ 'track': {'keymap': 'ctrl-t'},
+  \}
+
 " coc Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -90,19 +102,6 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 let NERDTreeShowHidden=1
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
-
 
 " gitgutter settings
 set signcolumn=yes
@@ -116,8 +115,8 @@ nmap ghu <Plug>(GitGutterUndoHunk)
 let g:gitgutter_sign_added = '✚'
 let g:gitgutter_sign_modified = '✹'
 let g:gitgutter_sign_removed = '✖'
-let g:gitgutter_sign_removed_first_line = '-'
-let g:gitgutter_sign_modified_removed = '-'
+let g:gitgutter_sign_removed_first_line = '✖'
+let g:gitgutter_sign_modified_removed = '✹'
 
 " signcolumn airline theme
 let g:airline_theme = 'bubblegum'

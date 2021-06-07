@@ -1,5 +1,5 @@
 [options]
-addons_path = /Users/vega/Desktop/benandfrank/bnf_addons/enterprise,/Users/vega/Desktop/benandfrank/odoo/odoo/addons,/Users/vega/Desktop/benandfrank/odoo/addons,/Users/vega/Desktop/benandfrank/bnf_addons/account-financial-tools,/Users/vega/Desktop/benandfrank/bnf_addons/account-invoicing,/Users/vega/Desktop/benandfrank/bnf_addons/addons-vauxoo,/Users/vega/Desktop/benandfrank/bnf_addons/benandfrank,/Users/vega/Desktop/benandfrank/bnf_addons/brand,/Users/vega/Desktop/benandfrank/bnf_addons/mexico,/Users/vega/Desktop/benandfrank/bnf_addons/optierp,/Users/vega/Desktop/benandfrank/bnf_addons/product-attribute,/Users/vega/Desktop/benandfrank/bnf_addons/purchase-workflow,/Users/vega/Desktop/benandfrank/bnf_addons/queue,/Users/vega/Desktop/benandfrank/bnf_addons/report-print-send,/Users/vega/Desktop/benandfrank/bnf_addons/server-tools,/Users/vega/Desktop/benandfrank/bnf_addons/server-ux,/Users/vega/Desktop/benandfrank/bnf_addons/vendor-bills,/Users/vega/Desktop/benandfrank/bnf_addons/xunnel-account
+addons_path = /Users/vega/Desktop/benandfrank/bnf_addons/enterprise,/Users/vega/Desktop/benandfrank/odoo/odoo/addons,/Users/vega/Desktop/benandfrank/odoo/addons,/Users/vega/Desktop/benandfrank/bnf_addons/account-financial-tools,/Users/vega/Desktop/benandfrank/bnf_addons/account-invoicing,/Users/vega/Desktop/benandfrank/bnf_addons/addons-vauxoo,/Users/vega/Desktop/benandfrank/bnf_addons/benandfrank,/Users/vega/Desktop/benandfrank/bnf_addons/brand,/Users/vega/Desktop/benandfrank/bnf_addons/mexico,/Users/vega/Desktop/benandfrank/bnf_addons/optierp,/Users/vega/Desktop/benandfrank/bnf_addons/product-attribute,/Users/vega/Desktop/benandfrank/bnf_addons/purchase-workflow,/Users/vega/Desktop/benandfrank/bnf_addons/queue,/Users/vega/Desktop/benandfrank/bnf_addons/report-print-send,/Users/vega/Desktop/benandfrank/bnf_addons/server-tools,/Users/vega/Desktop/benandfrank/bnf_addons/server-ux,/Users/vega/Desktop/benandfrank/bnf_addons/vendor-bills,/Users/vega/Desktop/benandfrank/bnf_addons/xunnel-account,/Users/vega/Desktop/benandfrank/bnf_addons/payment_nelo
 admin_passwd = admin
 csv_internal_sep = ,
 data_dir = /Users/vega/Library/Application Support/Odoo
@@ -16,9 +16,9 @@ demo = {}
 email_from = False
 geoip_database = /usr/share/GeoIP/GeoLite2-City.mmdb
 http_enable = True
-http_interface = 
+http_interface =
 http_port = 8069
-import_partial = 
+import_partial =
 limit_memory_hard = 2684354560
 limit_memory_soft = 2147483648
 limit_request = 8192
